@@ -78,10 +78,6 @@ unsigned int hash(const char *word)
 
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
-// BUG FOUND: for some reason when you are reading the dictionary, all it includes is the dictionaries name with no spaces or
-// newlines (ex. dictionarylarge) this is why no words are being added to dictionary. figure out how to properly read the
-// dictionary. need to update variable k to the actual length and not just the length of the title of dictionary. Try using fseek
-// and ftell from reverse.c
 {
     // TODO
     // Sets all buckets to NULL to avoid garbage values
